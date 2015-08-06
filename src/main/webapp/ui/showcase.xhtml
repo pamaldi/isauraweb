@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:h="http://xmlns.jcp.org/jsf/html"
+          xmlns:p="http://primefaces.org/ui">
+        <h:head>
+            <style type="text/css">
+
+            </style>
+        </h:head>
+        <h:body>
+            <h3> SHOWCASE </h3>
+            <p:menubar>
+                <p:submenu label="Ajax Core">
+                    <p:menuitem outcome="/ui/ajax/basic.xhtml" value="Basic"></p:menuitem>
+                    <p:menuitem outcome="/ui/ajax/event.xhtml" value="Event"></p:menuitem>
+                    <p:menuitem outcome="/ui/ajax/listener.xhtml" value="Listener"></p:menuitem>
+                    <p:menuitem outcome="/ui/ajax/counter.xhtml" value="Counter"></p:menuitem>
+                    <p:menuitem outcome="/ui/ajax/process.xhtml" value="Process"></p:menuitem>
+                    <p:menuitem outcome="/ui/ajax/validation.xhtml" value="Validation"></p:menuitem>
+                    <p:menuitem outcome="/ui/ajax/dropdown.xhtml" value="Dropdown"></p:menuitem>
+                    <p:menuitem outcome="/ui/ajax/partialSubmit.xhtml" value="PartialSubmit"></p:menuitem>
+                    <p:menuitem outcome="/ui/ajax/selector.xhtml" value="Selector"></p:menuitem>
+                    <p:menuitem outcome="/ui/ajax/search.xhtml" value="Search"></p:menuitem>
+                    <p:menuitem outcome="/ui/ajax/poll.xhtml" value="Poll"></p:menuitem>
+                    <p:menuitem outcome="/ui/ajax/fragment.xhtml" value="Fragment"></p:menuitem>
+                    <p:menuitem outcome="/ui/ajax/status.xhtml" value="Status"></p:menuitem>
+                    <p:menuitem outcome="/ui/ajax/remoteCommand.xhtml" value="RemoteCommand"></p:menuitem>                
+                </p:submenu>
+
+                <p:submenu label="Input">
+                    <p:menuitem outcome="/ui/input/autoComplete.xhtml" value="AutoComplete"></p:menuitem>
+                    <p:menuitem outcome="/ui/input/inputTextarea.xhtml" value="InputTextarea"></p:menuitem>
+                    <p:menuitem outcome="/ui/input/booleanButton.xhtml" value="BooleanButton"></p:menuitem>
+                    <p:menuitem outcome="/ui/input/booleanCheckbox.xhtml" value="BooleanCheckbox"></p:menuitem>
+                    <p:menuitem outcome="/ui/input/calendar.xhtml" value="Calendar"></p:menuitem>
+                    <p:menuitem outcome="/ui/input/checkboxMenu.xhtml" value="CheckboxMenu"></p:menuitem>
+                    <p:menuitem outcome="/ui/input/oneMenu.xhtml" value="OneMenu"></p:menuitem>
+                    <p:menuitem outcome="/ui/input/editor.xhtml" value="Editor"></p:menuitem> 
+                    <p:menuitem outcome="/ui/input/inputText.xhtml" value="InputText"></p:menuitem>
+                    <p:menuitem outcome="/ui/input/inputMask.xhtml" value="InputMask"></p:menuitem>
+                    <p:menuitem outcome="/ui/input/listbox.xhtml" value="Listbox"></p:menuitem>
+                    <p:menuitem outcome="/ui/input/manyButton.xhtml" value="ManyButton"></p:menuitem>
+                    <p:menuitem outcome="/ui/input/manyMenu.xhtml" value="ManyMenu"></p:menuitem> 
+                    <p:menuitem outcome="/ui/input/manyCheckbox.xhtml" value="ManyCheckbox"></p:menuitem> 
+                    <p:menuitem outcome="/ui/input/multiSelectListbox.xhtml" value="MultiSelectListbox"></p:menuitem>
+                    <p:menuitem outcome="/ui/input/oneButton.xhtml" value="OneButton"></p:menuitem> 
+                    <p:menuitem outcome="/ui/input/oneRadio.xhtml" value="OneRadio"></p:menuitem> 
+                    <p:menuitem outcome="/ui/input/spinner.xhtml" value="Spinner"></p:menuitem>
+                    <p:menuitem outcome="/ui/input/slider.xhtml" value="Slider"></p:menuitem>
+                    <p:menuitem outcome="/ui/input/inputSwitch.xhtml" value="Switch"></p:menuitem>
+                    <p:menuitem outcome="/ui/input/password.xhtml" value="Password"></p:menuitem>
+                    <p:menuitem outcome="/ui/input/keyboard.xhtml" value="Keyboard"></p:menuitem>
+                    <p:menuitem outcome="/ui/input/rating.xhtml" value="Rating"></p:menuitem>
+                    <p:menuitem outcome="/ui/input/colorPicker.xhtml" value="ColorPicker"></p:menuitem>
+                    <p:menuitem outcome="/ui/input/inplace.xhtml" value="Inplace"></p:menuitem>
+                </p:submenu>
+
+                <p:submenu label="Button">
+                    <p:menuitem outcome="/ui/button/button.xhtml" value="Button"></p:menuitem>
+                    <p:menuitem outcome="/ui/button/commandButton.xhtml" value="CommandButton"></p:menuitem>
+                    <p:menuitem outcome="/ui/button/commandLink.xhtml" value="CommandLink"></p:menuitem>
+                    <p:menuitem outcome="/ui/button/link.xhtml" value="Link"></p:menuitem>
+                    <p:menuitem outcome="/ui/button/splitButton.xhtml" value="SplitButton"></p:menuitem>
+                </p:submenu>
+
+                <p:submenu label="Data">
+                    <p:menuitem outcome="/ui/data/carousel.xhtml" value="Carousel"></p:menuitem>
+                    <p:menuitem outcome="/ui/data/dataGrid.xhtml" value="DataGrid"></p:menuitem>
+                    <p:menuitem outcome="/ui/data/dataList.xhtml" value="DataList"></p:menuitem>
+                    <p:submenu label="DataScroller">
+                        <p:menuitem outcome="/ui/data/datascroller/basic.xhtml" value="Basic"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datascroller/inline.xhtml" value="Inline"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datascroller/loader.xhtml" value="Loader"></p:menuitem>
+                    </p:submenu>
+                    <p:submenu label="DataTable">
+                        <p:menuitem outcome="/ui/data/datatable/basic.xhtml" value="Basic"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/facets.xhtml" value="Facets"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/paginator.xhtml" value="Paginator"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/sort.xhtml" value="Sort"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/filter.xhtml" value="Filter"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/selection.xhtml" value="Selection"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/group.xhtml" value="Group"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/subTable.xhtml" value="SubTable"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/summaryRow.xhtml" value="SummaryRow"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/expansion.xhtml" value="Expansion"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/columns.xhtml" value="Columns"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/edit.xhtml" value="Edit"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/scroll.xhtml" value="Scroll"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/rowColor.xhtml" value="RowColor"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/lazy.xhtml" value="Lazy"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/columnResize.xhtml" value="Resize"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/reorder.xhtml" value="Reorder"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/columnToggler.xhtml" value="ColToggler"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/contextMenu.xhtml" value="ContextMenu"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/sticky.xhtml" value="Sticky"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/responsive.xhtml" value="Responsive"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/rtl.xhtml" value="RTL"></p:menuitem>
+                    </p:submenu>
+                    <p:submenu label="Diagram">
+                        <p:menuitem outcome="/ui/data/diagram/basic.xhtml" value="Basic"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/diagram/hierarchical.xhtml" value="Hierarchical"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/diagram/flowchart.xhtml" value="FlowChart"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/diagram/statemachine.xhtml" value="StateMachine"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/diagram/editable.xhtml" value="Editable"></p:menuitem>
+                    </p:submenu>
+                    <p:menuitem outcome="/ui/data/pickList.xhtml" value="PickList"></p:menuitem>
+                    <p:menuitem outcome="/ui/data/orderList.xhtml" value="OrderList"></p:menuitem>
+                    <p:submenu label="GMap">
+                        <p:menuitem outcome="/ui/data/gmap/basic.xhtml" value="Basic"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/gmap/event.xhtml" value="Event"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/gmap/markers.xhtml" value="Markers"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/gmap/markerSelection.xhtml" value="Selection"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/gmap/addMarkers.xhtml" value="Add Markers"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/gmap/draggableMarkers.xhtml" value="Draggable"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/gmap/infoWindow.xhtml" value="InfoWindow"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/gmap/polylines.xhtml" value="Polylines"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/gmap/polygons.xhtml" value="Polygons"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/gmap/circles.xhtml" value="Circles"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/gmap/rectangles.xhtml" value="Rectangles"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/gmap/street.xhtml" value="StreetView"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/gmap/controls.xhtml" value="Controls"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/gmap/geocode.xhtml" value="Geocode"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/gmap/mapDialog.xhtml" value="Dialog"></p:menuitem>
+                    </p:submenu>
+                    <p:submenu label="DataExporter">
+                        <p:menuitem outcome="/ui/data/dataexporter/basic.xhtml" value="Basic"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/dataexporter/excludeColumns.xhtml" value="Exclude"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/dataexporter/customizedDocuments.xhtml" value="Customized"></p:menuitem>
+                    </p:submenu>
+                    <p:menuitem outcome="/ui/data/mindmap.xhtml" value="Mindmap"></p:menuitem>
+                    <p:menuitem outcome="/ui/data/ring.xhtml" value="Ring"></p:menuitem>
+                    <p:menuitem outcome="/ui/data/schedule.xhtml" value="Schedule"></p:menuitem>
+                    <p:menuitem outcome="/ui/data/tagCloud.xhtml" value="TagCloud"></p:menuitem>
+                    <p:submenu label="Tree">
+                        <p:menuitem outcome="/ui/data/tree/basic.xhtml" value="Basic"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/tree/icon.xhtml" value="Icon"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/tree/selection.xhtml" value="Selection"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/tree/events.xhtml" value="Events"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/tree/dragdrop.xhtml" value="DragDrop"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/tree/contextMenu.xhtml" value="ContextMenu"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/tree/animate.xhtml" value="Animate"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/tree/rtl.xhtml" value="RTL"></p:menuitem>
+                    </p:submenu>
+                    <p:submenu label="TreeTable">
+                        <p:menuitem outcome="/ui/data/treetable/basic.xhtml" value="Basic"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/treetable/selection.xhtml" value="Selection"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/treetable/events.xhtml" value="Events"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/treetable/contextMenu.xhtml" value="ContextMenu"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/treetable/scroll.xhtml" value="Scroll"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/treetable/resize.xhtml" value="Resize"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/treetable/sort.xhtml" value="Sort"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/treetable/columns.xhtml" value="Columns"></p:menuitem>
+                    </p:submenu>
+                    <p:submenu label="HorizontalTree">
+                        <p:menuitem outcome="/ui/data/htree/basic.xhtml" value="Basic"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/htree/icon.xhtml" value="Icon"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/htree/selection.xhtml" value="Selection"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/htree/events.xhtml" value="Events"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/htree/contextMenu.xhtml" value="ContextMenu"></p:menuitem>
+                    </p:submenu>
+                </p:submenu>
+
+                <p:submenu label="Panel">
+                    <p:menuitem outcome="/ui/panel/accordionPanel.xhtml" value="Accordion"></p:menuitem>
+                    <p:menuitem outcome="/ui/panel/dashboard.xhtml" value="Dashboard"></p:menuitem>
+                    <p:menuitem outcome="/ui/panel/fieldset.xhtml" value="Fieldset"></p:menuitem>
+                    <p:menuitem outcome="/ui/panel/grid.xhtml" value="Grid CSS"></p:menuitem>
+                    <p:submenu label="Layout">
+                        <p:menuitem outcome="/ui/panel/layout/full.xhtml" target="_blank" value="Full"></p:menuitem>
+                        <p:menuitem outcome="/ui/panel/layout/element.xhtml" value="Element"></p:menuitem>
+                        <p:menuitem outcome="/ui/panel/layout/nested.xhtml" target="_blank" value="Nested"></p:menuitem>
+                        <p:menuitem outcome="/ui/panel/layout/events.xhtml" target="_blank" value="Events"></p:menuitem>
+                        <p:menuitem outcome="/ui/panel/layout/complex.xhtml" target="_blank" value="Complex"></p:menuitem>
+                        <p:menuitem outcome="/ui/panel/layout/mailbox.xhtml" target="_blank" value="Mailbox"></p:menuitem>
+                    </p:submenu>  
+                    <p:menuitem outcome="/ui/panel/notificationBar.xhtml" value="NotificationBar"></p:menuitem>
+                    <p:menuitem outcome="/ui/panel/outputPanel.xhtml" value="OutputPanel"></p:menuitem>
+                    <p:menuitem outcome="/ui/panel/panel.xhtml" value="Panel"></p:menuitem>
+                    <p:menuitem outcome="/ui/panel/panelGrid.xhtml" value="PanelGrid"></p:menuitem>
+                    <p:menuitem outcome="/ui/panel/ribbon.xhtml" value="Ribbon"></p:menuitem>
+                    <p:menuitem outcome="/ui/panel/scrollPanel.xhtml" value="ScrollPanel"></p:menuitem>
+                    <p:menuitem outcome="/ui/panel/tabView.xhtml" value="TabView"></p:menuitem>
+                    <p:menuitem outcome="/ui/panel/toolbar.xhtml" value="Toolbar"></p:menuitem>
+                    <p:menuitem outcome="/ui/panel/wizard.xhtml" value="Wizard"></p:menuitem>
+                </p:submenu>
+
+                <p:submenu label="Overlay">
+                    <p:menuitem outcome="/ui/overlay/confirmDialog.xhtml" value="ConfirmDialog"></p:menuitem>
+                    <p:submenu label="Dialog">
+                        <p:menuitem outcome="/ui/overlay/dialog/basic.xhtml" value="Basic"></p:menuitem>
+                        <p:menuitem outcome="/ui/overlay/dialog/dynamic.xhtml" value="Dynamic"></p:menuitem>
+                        <p:menuitem outcome="/ui/overlay/dialog/focus.xhtml" value="Focus"></p:menuitem>
+                        <p:menuitem outcome="/ui/overlay/dialog/events.xhtml" value="Events"></p:menuitem>
+                        <p:menuitem outcome="/ui/overlay/dialog/minMax.xhtml" value="Min/Max"></p:menuitem>
+                        <p:menuitem outcome="/ui/overlay/dialog/loginDemo.xhtml" value="Login"></p:menuitem>
+                        <p:menuitem outcome="/ui/overlay/dialog/rtl.xhtml" value="RTL"></p:menuitem>
+                    </p:submenu>
+                    <p:menuitem outcome="/ui/overlay/lightBox.xhtml" value="LightBox"></p:menuitem>
+                    <p:menuitem outcome="/ui/overlay/overlayPanel.xhtml" value="OverlayPanel"></p:menuitem>
+                    <p:submenu label="Tooltip">
+                        <p:menuitem outcome="/ui/overlay/tooltip/tooltipOptions.xhtml" value="Tooltip Options"></p:menuitem>
+                        <p:menuitem outcome="/ui/overlay/tooltip/tooltipGlobal.xhtml" value="Global Tooltip"></p:menuitem>
+                    </p:submenu>
+                </p:submenu>
+
+                <p:submenu label="Menu">
+                    <p:menuitem outcome="/ui/menu/breadcrumb.xhtml" value="Breadcrumb"></p:menuitem>
+                    <p:submenu label="ContextMenu">
+                        <p:menuitem outcome="/ui/menu/contextmenu/basic.xhtml" value="Basic"></p:menuitem>
+                        <p:menuitem outcome="/ui/menu/contextmenu/tiered.xhtml" value="Tiered"></p:menuitem>
+                        <p:menuitem outcome="/ui/menu/contextmenu/target.xhtml" value="Target"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/datatable/contextMenu.xhtml" value="DataTable"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/tree/contextMenu.xhtml" value="Tree"></p:menuitem>
+                        <p:menuitem outcome="/ui/data/treetable/contextMenu.xhtml" value="TreeTable"></p:menuitem>
+                    </p:submenu>
+                    <p:menuitem outcome="/ui/menu/dock.xhtml" value="Dock"></p:menuitem>
+                    <p:menuitem outcome="/ui/menu/megaMenu.xhtml" value="MegaMenu"></p:menuitem>
+                    <p:menuitem outcome="/ui/menu/menu.xhtml" value="Menu"></p:menuitem>
+                    <p:menuitem outcome="/ui/menu/menubar.xhtml" value="Menubar"></p:menuitem>
+                    <p:menuitem outcome="/ui/menu/menuButton.xhtml" value="MenuButton"></p:menuitem>
+                    <p:menuitem outcome="/ui/menu/panelMenu.xhtml" value="PanelMenu"></p:menuitem>
+                    <p:menuitem outcome="/ui/menu/slideMenu.xhtml" value="SlideMenu"></p:menuitem>
+                    <p:menuitem outcome="/ui/menu/stack.xhtml" value="Stack"></p:menuitem>
+                    <p:menuitem outcome="/ui/menu/steps.xhtml" value="Steps"></p:menuitem>
+                    <p:menuitem outcome="/ui/menu/tabMenu.xhtml" value="TabMenu"></p:menuitem>
+                    <p:menuitem outcome="/ui/menu/tieredMenu.xhtml" value="TieredMenu"></p:menuitem>
+                </p:submenu>
+
+                <p:submenu label="Charts">         
+                    <p:menuitem outcome="/ui/chart/area.xhtml" value="Area"></p:menuitem>
+                    <p:menuitem outcome="/ui/chart/bar.xhtml" value="Bar"></p:menuitem>
+                    <p:menuitem outcome="/ui/chart/bubble.xhtml" value="Bubble"></p:menuitem>
+                    <p:menuitem outcome="/ui/chart/donut.xhtml" value="Donut"></p:menuitem>
+                    <p:menuitem outcome="/ui/chart/line.xhtml" value="Line"></p:menuitem>
+                    <p:menuitem outcome="/ui/chart/pie.xhtml" value="Pie"></p:menuitem>
+                    <p:menuitem outcome="/ui/chart/metergauge.xhtml" value="MeterGauge"></p:menuitem>
+                    <p:menuitem outcome="/ui/chart/ohlc.xhtml" value="OHLC"></p:menuitem>
+                    <p:menuitem outcome="/ui/chart/animate.xhtml" value="Animate"></p:menuitem>
+                    <p:menuitem outcome="/ui/chart/export.xhtml" value="Export"></p:menuitem>
+                    <p:menuitem outcome="/ui/chart/interactive.xhtml" value="Interactive"></p:menuitem>
+                    <p:menuitem outcome="/ui/chart/live.xhtml" value="Live"></p:menuitem>
+                    <p:menuitem outcome="/ui/multimedia/graphicImage.xhtml" value="Static"></p:menuitem>
+                    <p:menuitem outcome="/ui/chart/zoom.xhtml" value="Zoom"></p:menuitem>
+                    <p:menuitem outcome="/ui/chart/combined.xhtml" value="Combined"></p:menuitem>
+                    <p:menuitem outcome="/ui/chart/multiaxis.xhtml" value="MultiAxis"></p:menuitem>
+                    <p:menuitem outcome="/ui/chart/date.xhtml" value="Date"></p:menuitem>
+                    <p:menuitem outcome="/ui/chart/responsive.xhtml" value="Responsive"></p:menuitem>
+                </p:submenu>
+
+                <p:submenu label="Messages"> 
+                    <p:menuitem outcome="/ui/message/growl.xhtml" value="Growl"></p:menuitem>
+                    <p:menuitem outcome="/ui/message/messages.xhtml" value="Messages"></p:menuitem>
+                </p:submenu>
+
+                <p:submenu label="Multimedia">
+                    <p:menuitem outcome="/ui/multimedia/barcode.xhtml" value="Barcode"></p:menuitem>
+                    <p:menuitem outcome="/ui/multimedia/compare.xhtml" value="Compare"></p:menuitem>
+                    <p:menuitem outcome="/ui/multimedia/contentFlow.xhtml" value="ContentFlow"></p:menuitem>
+                    <p:menuitem outcome="/ui/multimedia/cropper.xhtml" value="Cropper"></p:menuitem>
+                    <p:menuitem outcome="/ui/multimedia/galleria.xhtml" value="Galleria"></p:menuitem>
+                    <p:menuitem outcome="/ui/multimedia/graphicImage.xhtml" value="GraphicImage"></p:menuitem>
+                    <p:menuitem outcome="/ui/multimedia/media.xhtml" value="Media"></p:menuitem>
+                    <p:menuitem outcome="/ui/multimedia/photoCam.xhtml" value="PhotoCam"></p:menuitem>
+                    <p:menuitem outcome="/ui/multimedia/switch.xhtml" value="Switch"></p:menuitem>
+                </p:submenu>
+
+                <p:submenu label="File">
+                    <p:submenu label="Upload">
+                        <p:menuitem outcome="/ui/file/upload/basic.xhtml" value="Basic"></p:menuitem>
+                        <p:menuitem outcome="/ui/file/upload/single.xhtml" value="Single"></p:menuitem>
+                        <p:menuitem outcome="/ui/file/upload/multiple.xhtml" value="Multiple"></p:menuitem>
+                        <p:menuitem outcome="/ui/file/upload/auto.xhtml" value="Auto"></p:menuitem>
+                        <p:menuitem outcome="/ui/file/upload/dnd.xhtml" value="DragDrop"></p:menuitem>
+                    </p:submenu>
+                    <p:menuitem outcome="/ui/file/download.xhtml" value="Download"></p:menuitem>
+                </p:submenu>
+
+                <p:submenu label="DragDrop">
+                    <p:menuitem outcome="/ui/dnd/draggable.xhtml" value="Draggable"></p:menuitem>
+                    <p:menuitem outcome="/ui/dnd/dataGrid.xhtml" value="DataGrid"></p:menuitem>
+                    <p:menuitem outcome="/ui/dnd/dataTable.xhtml" value="DataTable"></p:menuitem>
+                    <p:menuitem outcome="/ui/dnd/custom.xhtml" value="Custom"></p:menuitem>
+                </p:submenu>
+
+                <p:submenu label="Misc">
+                    <p:menuitem outcome="/ui/misc/blockUI.xhtml" value="BlockUI"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/cache.xhtml" value="Cache"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/captcha.xhtml" value="Captcha"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/clock.xhtml" value="Clock"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/collector.xhtml" value="Collector"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/defaultCommand.xhtml" value="DefaultCommand"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/effect.xhtml" value="Effect"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/exceptionHandler.xhtml" value="ExceptionHandler"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/fa.xhtml" value="FontAwesome"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/feedReader.xhtml" value="FeedReader"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/focus.xhtml" value="Focus"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/hotkey.xhtml" value="Hotkey"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/idleMonitor.xhtml" value="IdleMonitor"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/log.xhtml" value="Log"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/outputLabel.xhtml" value="OutputLabel"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/printer.xhtml" value="Printer"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/progressBar.xhtml" value="ProgressBar"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/requestContext.xhtml" value="RequestContext"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/resetInput.xhtml" value="ResetInput"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/resizable.xhtml" value="Resizable"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/separator.xhtml" value="Separator"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/spacer.xhtml" value="Spacer"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/spotlight.xhtml" value="Spotlight"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/sticky.xhtml" value="Sticky"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/terminal.xhtml" value="Terminal"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/themeSwitcher.xhtml" value="ThemeSwitcher"></p:menuitem>
+                    <p:menuitem outcome="/ui/misc/watermark.xhtml" value="Watermark"></p:menuitem>
+                </p:submenu>
+            </p:menubar>
+        </h:body>
+    </html>

@@ -1,0 +1,57 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml">
+
+    <ui:define name="content">
+        
+        <!-- SUB TOPBAR START -->
+    
+        <div class="Container100 UserLinks">
+            <div class="ContainerIndent TexAlRight">
+                <a href="#" class="DispInlBlock Fright BoldGray HoverEffect"><i class="icon-shopping_cart Fs30"><span class="CartText White">2</span></i> </a>
+                <a href="#" class="DispInlBlock Fright BoldGray MarRight10 HoverEffect"><span class="Fs22 FontRobotoLight">Jack Wellington, Welcome</span> <i class="icon-account_circle Fright Fs30"></i></a>
+            </div>   
+            
+            <div class="EmptyBox10"></div>
+        </div>
+
+        <div class="Container100 UserLinks">
+            <div class="ContainerIndent">
+                <span class="BoldGray Fs18 FontRobotoLight Fleft ShowOnDesktop"><i class="icon-arrow-right"></i> File Upload</span>
+
+                <a href="#" class="BoldGray Fs16 FontRobotoLight Fright HoverEffect"><i class="icon-paper"></i> Notes</a>
+                <a href="#" class="BoldGray Fs16 FontRobotoLight Fright MarRight20 HoverEffect"><i class="icon-briefcase"></i> Tasks</a>
+                <a href="#" class="BoldGray Fs16 FontRobotoLight Fright MarRight20 HoverEffect"><i class="icon-link"></i> Latest Links</a>
+                <a href="#" class="BoldGray Fs16 FontRobotoLight Fright MarRight20 HoverEffect"><i class="icon-layers"></i> All Invoices</a>
+            </div>
+            
+            <div class="EmptyBox5"></div>
+        </div>
+
+        <!-- SUB TOPBAR END -->
+        
+        
+        <div class="Container100">
+            <div class="ContainerIndent">
+                <div class="Card ShadowEffect whiteback GreenBorderedBox">
+                    <div class="Container100">
+                        <div class="ContainerIndent">
+                            <h2>Advanced</h2>
+                            <h:form>
+                                <p:fileUpload fileUploadListener="#{fileUploadView.handleFileUpload}" mode="advanced" dragDropSupport="false"
+                                              multiple="true" update="messages" sizeLimit="100000" fileLimit="3" allowTypes="/(\.|\/)(gif|jpe?g|png)$/" />
+
+                                <p:growl id="messages" showDetail="true" />
+                            </h:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </ui:define>
+
+</ui:composition>

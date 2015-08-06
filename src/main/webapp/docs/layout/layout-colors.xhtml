@@ -1,0 +1,174 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml">
+
+    <ui:define name="content">
+        <div class="Container100">
+            <div class="ContainerIndent">
+                <div class="Card ShadowEffect">
+                    <div class="Container100">
+                        <div class="ContainerIndent">
+                            <div class="Container100 TexAlCenter"><i class="icon-mountains14 Red Fs130 MarTop20" style="line-height:1 !important;"></i></div>
+                            <h1 class="TexAlCenter Fs40 Red">Modena Documentation</h1>
+                            <div class="EmptyBox40"></div>
+
+                            <div class="ContainerIndent">
+                                <h1 class="TexAlCenter gray Fs30">
+                                    <span class="Red Fs30">Modena Layout<br/></span>
+                                </h1>
+                            </div>
+
+                            <p:panel styleClass="">
+                                <div class="Fs20 TexAlCenter Red">Layout Colors</div>
+                                <p class="Fs16">Top bar and body background color alternatives are provided out of the box. <i>Color</i>Modena defines the color of top bar whereas <i>Geometry</i> class
+                                adds the corresponding background image for the given color. Both classes should be defined at h:body element e.g h:body styleClass="BlueModena Geometry".</p>
+                                <div class="EmptyBox10"></div>
+                                <p:panelGrid columns="3" styleClass="Wid100">
+                                    <h:outputText value="Class Group" styleClass="Orange Fs20 Wid30"/>
+                                    <h:outputText value="Class Name" styleClass="Orange Fs20 Wid30"/>
+                                    <h:outputText value="Instructions" styleClass="Orange Fs20 Wid40"/>
+
+                                    <h:outputText value="Layout Colors" styleClass="Fs20 Wid30" escape="false"/>
+                                    <h:outputText value="GrayModena &lt;br /&gt;
+                                                         BlueModena &lt;br /&gt;
+                                                         RedModena &lt;br /&gt;
+                                                         IndigoModena &lt;br /&gt;
+                                                         CyanModena &lt;br /&gt;" styleClass="Blue Wid30" escape="false"/>
+                                    <h:outputText value="Color alternative for top bar and the corresponding the body background geometry image if defined." escape="false"/>
+
+                                    <h:outputText value="" styleClass="Fs20 Wid30" escape="false"/>
+                                    <h:outputText value="Geometry &lt;br /&gt;" styleClass="Blue Wid30" escape="false"/>
+                                    <h:outputText value="Optional background image, color is defined by the *Modena color." escape="false"/>
+                                </p:panelGrid>
+                            </p:panel>
+
+                            <div class="EmptyBox60"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="Container100">
+            <div class="Container25 Responsive">
+                <div class="ContainerIndent">
+                    <div class="Card ShadowEffect">
+                        <div class="BigTopic">GrayModena</div>
+                        <div class="EmptyBox20"></div>
+                        <p:graphicImage name="demo/images/GrayModena.png" class="Wid100"/>
+                        <div class="EmptyBox20"></div>
+                        <span class="Blue">StyleClass : <xmp class="FontRobotoMedium Red">GrayModena</xmp></span>
+                    </div>
+                </div>
+            </div>
+            <div class="Container25 Responsive">
+                <div class="ContainerIndent">
+                    <div class="Card ShadowEffect">
+                        <div class="BigTopic">GrayModena With Geometry</div>
+                        <div class="EmptyBox20"></div>
+                        <p:graphicImage name="demo/images/GrayModenaGeometry.png" class="Wid100"/>
+                        <div class="EmptyBox20"></div>
+                        <span class="Blue">StyleClass : <xmp class="FontRobotoMedium Red">GrayModena  Geometry</xmp></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="Container25 Responsive">
+                <div class="ContainerIndent">
+                    <div class="Card ShadowEffect">
+                        <div class="BigTopic">BlueModena</div>
+                        <div class="EmptyBox20"></div>
+                        <p:graphicImage name="demo/images/BlueModena.png" class="Wid100"/>
+                        <div class="EmptyBox20"></div>
+                        <span class="Blue">StyleClass : <xmp class="FontRobotoMedium Red">BlueModena</xmp></span>
+                    </div>
+                </div>
+            </div>
+            <div class="Container25 Responsive">
+                <div class="ContainerIndent">
+                    <div class="Card ShadowEffect">
+                        <div class="BigTopic">BlueModena With Geometry</div>
+                        <div class="EmptyBox20"></div>
+                        <p:graphicImage name="demo/images/BlueModenaGeometry.png" class="Wid100"/>
+                        <div class="EmptyBox20"></div>
+                        <span class="Blue">StyleClass : <xmp class="FontRobotoMedium Red">BlueModena  Geometry</xmp></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="Container25 Responsive">
+                <div class="ContainerIndent">
+                    <div class="Card ShadowEffect">
+                        <div class="BigTopic">RedModena</div>
+                        <div class="EmptyBox20"></div>
+                        <p:graphicImage name="demo/images/RedModena.png" class="Wid100"/>
+                        <div class="EmptyBox20"></div>
+                        <span class="Blue">StyleClass : <xmp class="FontRobotoMedium Red">RedModena</xmp></span>
+                    </div>
+                </div>
+            </div>
+            <div class="Container25 Responsive">
+                <div class="ContainerIndent">
+                    <div class="Card ShadowEffect">
+                        <div class="BigTopic">RedModena With Geometry</div>
+                        <div class="EmptyBox20"></div>
+                        <p:graphicImage name="demo/images/RedModenaGeometry.png" class="Wid100"/>
+                        <div class="EmptyBox20"></div>
+                        <span class="Blue">StyleClass : <xmp class="FontRobotoMedium Red">RedModena</xmp></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="Container25 Responsive">
+                <div class="ContainerIndent">
+                    <div class="Card ShadowEffect">
+                        <div class="BigTopic">CyanModena</div>
+                        <div class="EmptyBox20"></div>
+                        <p:graphicImage name="demo/images/CyanModena.png" class="Wid100"/>
+                        <div class="EmptyBox20"></div>
+                        <span class="Blue">StyleClass : <xmp class="FontRobotoMedium Red">CyanModena</xmp></span>
+                    </div>
+                </div>
+            </div>
+            <div class="Container25 Responsive">
+                <div class="ContainerIndent">
+                    <div class="Card ShadowEffect">
+                        <div class="BigTopic">CyanModena With Geometry</div>
+                        <div class="EmptyBox20"></div>
+                        <p:graphicImage name="demo/images/CyanModenaGeometry.png" class="Wid100"/>
+                        <div class="EmptyBox20"></div>
+                        <span class="Blue">StyleClass : <xmp class="FontRobotoMedium Red">CyanModena  Geometry</xmp></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="Container25 Responsive">
+                <div class="ContainerIndent">
+                    <div class="Card ShadowEffect">
+                        <div class="BigTopic">IndigoModena</div>
+                        <div class="EmptyBox20"></div>
+                        <p:graphicImage name="demo/images/IndigoModena.png" class="Wid100"/>
+                        <div class="EmptyBox20"></div>
+                        <span class="Blue">StyleClass : <xmp class="FontRobotoMedium Red">IndigoModena</xmp></span>
+                    </div>
+                </div>
+            </div>
+            <div class="Container25 Responsive">
+                <div class="ContainerIndent">
+                    <div class="Card ShadowEffect">
+                        <div class="BigTopic">IndigoModena With Geometry</div>
+                        <div class="EmptyBox20"></div>
+                        <p:graphicImage name="demo/images/IndigoModenaGeometry.png" class="Wid100"/>
+                        <div class="EmptyBox20"></div>
+                        <span class="Blue">StyleClass : <xmp class="FontRobotoMedium Red">IndigoModena  Geometry</xmp></span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </ui:define>
+
+</ui:composition>

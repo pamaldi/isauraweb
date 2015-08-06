@@ -1,0 +1,87 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml">
+
+    <ui:define name="content">
+        
+        <!-- SUB TOPBAR START -->
+    
+        <div class="Container100 UserLinks">
+            <div class="ContainerIndent TexAlRight">
+                <a href="#" class="DispInlBlock Fright BoldGray HoverEffect"><i class="icon-shopping_cart Fs30"><span class="CartText White">2</span></i> </a>
+                <a href="#" class="DispInlBlock Fright BoldGray MarRight10 HoverEffect"><span class="Fs22 FontRobotoLight">Jack Wellington, Welcome</span> <i class="icon-account_circle Fright Fs30"></i></a>
+            </div>   
+            
+            <div class="EmptyBox10"></div>
+        </div>
+
+        <div class="Container100 UserLinks">
+            <div class="ContainerIndent">
+                <span class="BoldGray Fs18 FontRobotoLight Fleft ShowOnDesktop"><i class="icon-arrow-right"></i> Messages</span>
+
+                <a href="#" class="BoldGray Fs16 FontRobotoLight Fright HoverEffect"><i class="icon-paper"></i> Notes</a>
+                <a href="#" class="BoldGray Fs16 FontRobotoLight Fright MarRight20 HoverEffect"><i class="icon-briefcase"></i> Tasks</a>
+                <a href="#" class="BoldGray Fs16 FontRobotoLight Fright MarRight20 HoverEffect"><i class="icon-link"></i> Latest Links</a>
+                <a href="#" class="BoldGray Fs16 FontRobotoLight Fright MarRight20 HoverEffect"><i class="icon-layers"></i> All Invoices</a>
+            </div>
+            
+            <div class="EmptyBox5"></div>
+        </div>
+
+        <!-- SUB TOPBAR END -->
+        
+        <div class="Container100">
+            <div class="ContainerIndent">
+                <div class="Card ShadowEffect">
+                    <div class="Container100">
+                        <div class="ContainerIndent">
+                            <h2 class="BigTopic">Messages</h2>
+                            <p:tooltip />
+
+                            <h:form>
+                                <p:messages showDetail="true" autoUpdate="true" closable="true" />
+
+                                <p:commandButton value="Info" actionListener="#{messagesView.info}" styleClass="RaisedButton"/>
+                                <p:commandButton value="Warn" actionListener="#{messagesView.warn}" styleClass="OrangeButton RaisedButton"/>
+                                <p:commandButton value="Error" actionListener="#{messagesView.error}" styleClass="PurpleButton RaisedButton"/>
+                                <p:commandButton value="Fatal" actionListener="#{messagesView.fatal}" styleClass="RedButton RaisedButton"/>
+                            </h:form>
+
+                            <div class="EmptyBox20"></div>
+
+                            <h:form>
+                                <p:growl id="growl" showDetail="true" sticky="true" /> 
+
+                                <h:panelGrid id="grid" columns="3" cellpadding="5">
+                                    <p:outputLabel for="default" value="Default:" />
+                                    <p:inputText id="default" required="true" />
+                                    <p:message for="default" />
+
+                                    <p:outputLabel for="txt" value="Text:" />
+                                    <p:inputText id="txt" required="true" />
+                                    <p:message for="txt" display="text" />
+
+                                    <p:outputLabel for="icon" value="Icon:" />
+                                    <p:inputText id="icon" required="true" />
+                                    <p:message for="icon" display="icon" />
+
+                                    <p:outputLabel for="tt" value="Tooltip:" />
+                                    <p:inputText id="tt" required="true" />
+                                    <p:message for="tt" display="tooltip" />
+                                </h:panelGrid>
+
+                                <p:commandButton id="submitButton" value="Submit" actionListener="#{messagesView.growlMessage()}" update="grid growl" styleClass="GreenButton RaisedButton"/>
+                            </h:form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </ui:define>
+
+</ui:composition>
